@@ -6,6 +6,7 @@ class App extends Component {
 
         return(
             <div id="main">
+                <h1>hello</h1>
                {/* Do not remove the main div */}
             </div>
         )
