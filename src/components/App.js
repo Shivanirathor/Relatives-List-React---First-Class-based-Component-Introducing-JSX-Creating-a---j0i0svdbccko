@@ -1,38 +1,32 @@
-import React, {Component, useState} from "react";
+import React, { Component } from "react";
 import '../styles/App.css';
 
 class App extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
-    
-     diwaliList : [
-        {name : "Kim"},
-        {name : "Tim"},
-        {name : "Sam"},
-        {name : "Hema"},
-        {name : "Kim"},
-        {name : "Kim"},
-        {name : "Kim"},
-        {name : "Kim"},
-        {name : "Kim"},
-        {name : "Kim"},
-     ]
-    }}
-     render() {
-       const relativeList = this.state.diwaliList.map((data, index)=>{
-        return <li key={`relativeListItem${index}`}>{data.name}</li>
-        
-       })
-       
+            diwaliList: [
+                { id: 1, name: "Kim" },
+                { id: 2, name: "Tim" },
+                { id: 3, name: "Sam" },
+                { id: 4, name: "Hema" },
+                { id: 5, name: "Tim" },
+              
+            ]
+        };
+    }
 
-        return(
+    render() {
+        const relativeList = this.state.diwaliList.map((data) => {
+            return <li key={`relativeListItem${data.id}`}>{data.name}</li>;
+        });
+
+        return (
             <div id="main">
-             <ol key={"diwaliList"}>{relativeList}</ol> 
+                <ol key="diwaliList">{relativeList}</ol>
             </div>
-        )
+        );
     }
 }
-
 
 export default App;
