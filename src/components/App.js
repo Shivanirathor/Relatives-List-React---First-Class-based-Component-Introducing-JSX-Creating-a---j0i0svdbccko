@@ -38,7 +38,7 @@ import '../styles/App.css';
 
 class App extends Component {
   render() {
-    const relatives = ["Amit", "Rita", "Rahul", "Kavya"];
+    const relatives = ["jeet", "Riya", "ruhi", "goldy"];
 
     return (
       <div>
