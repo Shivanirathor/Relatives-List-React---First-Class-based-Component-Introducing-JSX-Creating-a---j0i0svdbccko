@@ -28,7 +28,7 @@ class App extends Component {
 
         return(
             <div id="main">
-             <ol>{relativeList}</ol> 
+             <ol key={"diwaliList"}>{relativeList}</ol> 
             </div>
         )
     }
